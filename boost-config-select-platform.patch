@@ -1,0 +1,15 @@
+diff --git a/include/boost/config/detail/select_platform_config.hpp b/include/boost/config/detail/select_platform_config.hpp
+index b36eca57..0524096b 100644
+--- a/include/boost/config/detail/select_platform_config.hpp
++++ b/include/boost/config/detail/select_platform_config.hpp
+@@ -93,7 +93,9 @@
+ #  if defined(unix) \
+       || defined(__unix) \
+       || defined(_XOPEN_SOURCE) \
+-      || defined(_POSIX_SOURCE)
++      || defined(_POSIX_SOURCE) \
++      || defined(SWITCH) \
++      || defined(__SWITCH__)
+ 
+    // generic unix platform:
+ 
